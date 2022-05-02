@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Dashboard</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+    <!-- modal for adding new ticket subject -->
+    <div class="modal fade" id="modal_change_info">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Update info</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <form action="#" method="post">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="field mb-3">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                                            
+                                <div class="field mb-3">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field mb-3">
+                            <label for="role" class="form-label d-flex align-items-center">
+                                <i class="fa-solid fa-user-pen me-2 icon"></i> Change role
+                            </label>
+                            <select name="role" id="role" class="form-select">
+                                <option value="Administrator">Administrator</option>
+                                <option value="Agent">Agent</option>
+                            </select>
+                        </div>
+
+                        <div class="field mb-3">
+                            <label for="photo" class="form-label d-flex justify-content-between align-items-center">Change photo <i
+                                    class="fa-solid fa-image icon ms-3"></i></label>
+                            <input type="file" name="photo" id="photo" class="form-control d-none">
+                        </div>
+
+                        <div class="field d-grid">
+                            <button type="submit" class="btn btn-success d-block">Change now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 px-sm-5 border-bottom">
+            <!-- app logo -->
+            <div class="logo d-flex justify-content-center align-items-center">
+            <a href="#" class="me-1">
+               <!-- logo -->
+                <img src="../photos/DICT-logo.png" alt="" class="img">
+            </a>
+            <!-- title -->
+            <span>| Help Desk</span>
+            </div>
+        
+            <!-- app nav -->
+            <nav class="app_navigation d-flex align-items-center">
+            
+                <!-- notification drowdown -->
+                <div class="dropdown">
+                    <!-- notification bell -->
+                    <div class="nofications me-3 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown">
+                        <!-- notification counter -->
+                        <span class="notif_counter d-flex justify-content-center align-items-center">100</span>
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </div>
+            
+                    <!-- list of notifications -->
+                    <div class="dropdown-menu notification_list border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Magni, ex.</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A third link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A fourth link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A disabled link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+            
+                        </ul>
+                    </div>
+            
+                </div>
+                <!-- user avatar -->
+                <div class="nav_controls d-flex flex-column align-items-center position-relative">
+                    <div class="avatar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <img src="../photos/admin/avatar.png" alt="Avatar" class="img">
+                    </div>
+                    <span class="position">Agent</span>
+            
+                    <!-- drowpdown menu -->
+                    <ul class="dropdown-menu shadow border-0">
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./index.html">Dashboard <i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./ticket.html">Tickets <i class="fa-solid fa-ticket-simple"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center accordion-button"
+                                href="#settings" data-bs-toggle="collapse">Settings</a>
+                            <!-- collapsible items -->
+                            <div class="collapse" id="settings">
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./ticket-types.html">Ticket</a>
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./agents.html">Agent</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./profile.html">Profile <i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="../index.html">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </header>
+        <!-- !header -->
+
+
+
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="profile tabs container">
+
+                <!-- content -->
+                <div class="main_content">
+
+                    <div class="row">
+<!-- info -->
+                        <div class="col-md-6 order-1 order-md-0 d-flex justify-content-center align-items-center">
+                           <div class="p-2">
+                           <h1>Agent</h1>
+                           <h3><i class="fa-solid fa-envelope-open-text text-secondary"></i> agent@email.com</h3>
+
+                           <hr>
+
+                           <!-- exist if the user is remove  -->
+                           <div class="alert d-flex justify-content-center align-items-center">
+                               <!-- remove button -->
+                            <a href="" class="text-decoration-none d-flex justify-content-center align-items-center m-2">
+                                Remove <i class="fa-solid fa-trash-can ms-1 icon a-lg ms-1 text-danger"></i>
+                            </a>
+
+                           </div>
+                           
+                           <h5 class="alert text-center">Change password <i class="fa-solid fa-lock"></i></h5>
+                            <form action="#" method="post">
+
+                                <!-- old password -->
+                                <div class="field mb-3">
+                                    <label for="old_password" class="form-label">Old password</label>
+                                    <input type="text" name="old_password" id="old_password" class="form-control">
+                                </div>
+                                <!-- new password -->
+                                <div class="field mb-3">
+                                    <label for="new_password" class="form-label">New password</label>
+                                    <input type="text" name="new_password" id="new_password" class="form-control">
+                                </div>
+                                <!-- send -->
+                                <div class="field mb-3 text-end">
+                                    <button type="submit" class="btn btn-success">Update Now</button>
+                                </div>
+                            </form>
+                           </div>
+                        </div>
+
+                        <!-- avatar -->
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <div class="p-2">
+                                <h4 class="main_title fw-bold text-center">Profile <i class="fa-solid fa-certificate text-primary fa-sm"></i></h4>
+                                <div class="avatar mb-2">
+                                    <img src="../photos/admin/avatar.png" alt="avatar">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <h1 class="text-center">Jericko Rubio</h1>
+                                    <i class="fa-solid fa-pencil ms-3 change-name icon fa-lg text-secondary" data-bs-toggle="modal" data-bs-target="#modal_change_info"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Dashboard</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 border-bottom">
+            <!-- app logo -->
+            <div class="d-flex align-items-center">
+
+            <a href="#" class="me-1 position-relative reciever-img">
+               <!-- logo -->
+                <img src="../photos/admin/avatar.png" alt="" class="img">
+
+                <!-- active indicator -->
+                <span class="position-absolute active_indicator"></span>
+            </a>
+            <!-- agent -->
+            <div class="d-flex flex-column ms-2 reciever">
+                <h4 class="mb-0 fw-bold name">Jericko Rubio</h4>
+                <small class="email text-break">jerickorubiodev@gmail.com</small>
+            </div>
+            </div>
+
+            <!-- controls -->
+            <div class="controls d-flex align-items-center">
+            <!-- .. ticket-info -->
+            <div class="ticket-info">
+                    <!-- notification bell -->
+                    <div class="me-1 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown" data-bs-auto-close="false">
+                        <i class="fa-solid fa-ellipsis sm-icon fa-lg"></i>
+                    </div>
+                
+                    <!-- list of notifications -->
+                    <div class="dropdown-menu border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                   Ticket Number: <code class="fw-bold ms-5 fs-2">23456789</code> 
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    Customer: <span class="fw-bold ms-5">Jane doe canada</span>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    Email: <span class="fw-bold ms-5">customer@gmail.com</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    Subject: <span class="fw-bold ms-5">Maintenance</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    Created on: <span class="fw-bold ms-5">20/20/20</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    Updated on: <span class="fw-bold ms-5">20/20/21</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex flex-column">
+                                    <h5 class="mb-3 d-flex align-items-center justify-content-between">Status <i class="fa-solid fa-rotate sm-icon"></i></h5>
+                                      
+                                    <form action="" method="post">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="status" id="pending" checked>
+                                        <label class="form-check-label" for="pending">
+                                           Pending
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="status" id="resolved">
+                                        <label class="form-check-label" for="resolved">
+                                            Resolved
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="radio" name="status" id="closed">
+                                        <label class="form-check-label" for="closed">
+                                            Closed
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="field d-grid">
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <a class="exit text-decoration-none" href="./ticket.html">
+                <i class="fa-solid fa-xmark sm-icon fa-lg"></i>
+            </a>
+            </div>
+
+
+        
+        </header>
+        <!-- !header -->
+
+
+<!-- main -->
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="messenger tabs h-100 overflow-hidden d-flex">
+               
+                <!-- sidebar -->
+                <aside class="messenger_sidebar h-100">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">200</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <code
+                        class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">1</small></code>
+                    <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20,
+                            2022</small></h6>
+                </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code
+                            class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">20</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20,
+                                2022</small></h6>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code
+                            class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">10</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20,
+                                2022</small></h6>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">2</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+
+                    
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">12</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">10</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">4</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <code class="fs-5 text-primary d-flex align-items-center">#0987654 <small class="new_message_indicator p-1 ms-1">1</small></code>
+                        <h6 class="name fw-bold"><span>Jane Doe Canada</span> <small class="date fw-normal fst-italic">> Jan 20, 2022</small></h6>
+                    </a>
+                </aside>
+                <!-- content -->
+                <div class="messenger_chat h-100 position-relative">
+
+                    <div class="d-flex flex-column chat_content p-2">
+
+                        <!-- incoming message-->
+                        <div class="d-flex flex-column mb-3 me-auto">
+                            <div class="d-flex">
+                                <div class="avatar align-self-end">
+                                    <img src="../photos/admin/avatar.png" alt="img">
+                                </div>
+                                <div class="chat p-1 card border-0 incoming">
+                                    <div class="card-body p-2">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, quod!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center p-1">
+                                <small class="date_send">Friday, 12/10/2022 <i class="fa-solid fa-circle-check text-primary"></i></small>
+                            </div>
+                        </div>
+
+                        <!-- outgoing message-->
+                        <div class="d-flex flex-column ms-auto p-1 mb-3 me-2">
+                            <div class="chat border-0 outgoing card ms-auto">
+                                <div class="card-body p-2">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, quod!
+                                </div>
+                            </div>
+                            <div class="text-end p-1">
+                                <small class="date_send">Saturday, 12/10/2022 <i class="fa-solid fa-circle-check text-primary"></i></small>
+                            </div>
+                        </div>
+
+                        <!-- outgoing message -->
+                        <div class="d-flex flex-column ms-auto p-1 mb-3 me-2">
+                            <div class="chat border-0 outgoing card ms-auto">
+                                <div class="card-body p-2">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed quod omnis quas minima atque, magnam dolorem, aspernatur mollitia doloribus sunt ipsam neque deleniti in vero, nostrum voluptatibus nobis. Necessitatibus!
+                                </div>
+                            </div>
+                            <div class="text-end p-1">
+                                <small class="date_send">Saturday, 12/10/2022 <i class="fa-solid fa-circle-check text-primary"></i></small>
+                            </div>
+                        </div>
+
+                        <!-- incoming message-->
+                        <div class="d-flex flex-column mb-3 me-auto chat-line">
+                            <div class="d-flex">
+                                <div class="avatar align-self-end">
+                                    <img src="../photos/admin/avatar.png" alt="img">
+                                </div>
+                                <div class="chat p-1 card border-0 incoming">
+                                    <div class="card-body p-2">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iure neque distinctio consequuntur veniam iste.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center p-1">
+                                <small class="date_send">Friday, 12/10/2022 <i class="fa-solid fa-circle-check text-primary"></i></small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                   <div class="chat_form position-absolute px-2 d-flex justify-content-center flex-column">
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <div class="d-flex align-items-center">
+                                <div class="field flex-grow-1 position-relative message-area">
+                                    <textarea name="" id="" cols="30" rows="2" class="form-control form-select-sm" placeholder="Send a message..."></textarea>
+                                
+                                    <!-- photo icon -->
+                                    <div class="upload-file position-absolute d-flex justify-content-center align-items-center">
+                                        <input type="file" name="" id="">
+                                        <i class="fa-solid fa-image fa-lg text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="p-2">
+                                    <button type="submit" class="send_btn bg-primary text-white">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                   </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

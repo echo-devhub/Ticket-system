@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Settings</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+
+    <!-- modal for adding new agent subject -->
+    <div class="modal fade" id="modal_add_agent">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Add new agent</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <form action="#" method="post">
+    
+                        <div class="row mb-2">
+                            <!-- last name -->
+                            <div class="col-sm-6">
+                                <div class="field mb-3">
+                                    <input type="text" name="first_name" id="first_name" class="form-control"
+                                        placeholder="First name">
+                                </div>
+                            </div>
+
+                            <!-- first name -->
+                            <div class="col-sm-6">
+                                <div class="field">
+                                    <input type="text" name="last_name" id="last_name" class="form-control"
+                                        placeholder="Last name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- email address -->
+                        <div class="field mb-3">
+                            <label for="email" class="form-label d-flex align-items-center"><i class="fa-solid fa-envelope-open-text icon me-3"></i> Email address</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+
+                        <!-- agent role -->
+                        <div class="field mb-3">
+                            <label for="role" class="form-label"></i>Role</label>
+                            <select name="role" id="role" class="form-select">
+                                <option value="Administrator">Administrator</option>
+                                <option value="Agent">Agent</option>
+                            </select>
+                        </div>
+
+
+                        <!-- photo -->
+                        <div class="field mb-3">
+                                <label for="photo" class="form-label d-flex justify-content-between align-items-center">Upload photo <i class="fa-solid fa-image icon ms-3"></i></label>
+                            <input type="file" name="photo" id="photo" class="form-control d-none">
+                        </div>
+    
+                        <div class="field d-grid">
+                            <button type="submit" class="btn btn-primary d-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 px-sm-5 border-bottom">
+            <!-- app logo -->
+            <div class="logo d-flex justify-content-center align-items-center">
+            <a href="#" class="me-1">
+               <!-- logo -->
+                <img src="../photos/DICT-logo.png" alt="" class="img">
+            </a>
+            <!-- title -->
+            <span>| Help Desk</span>
+            </div>
+        
+            <!-- app nav -->
+            <nav class="app_navigation d-flex align-items-center">
+            
+                <!-- notification drowdown -->
+                <div class="dropdown">
+                    <!-- notification bell -->
+                    <div class="nofications me-3 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown">
+                        <!-- notification counter -->
+                        <span class="notif_counter d-flex justify-content-center align-items-center">100</span>
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </div>
+            
+                    <!-- list of notifications -->
+                    <div class="dropdown-menu notification_list border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Magni, ex.</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A third link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A fourth link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A disabled link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+            
+                        </ul>
+                    </div>
+            
+                </div>
+                <!-- user avatar -->
+                <div class="nav_controls d-flex flex-column align-items-center position-relative">
+                    <div class="avatar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <img src="../photos/admin/avatar.png" alt="Avatar" class="img">
+                    </div>
+                    <span class="position">Agent</span>
+            
+                    <!-- drowpdown menu -->
+                    <ul class="dropdown-menu shadow border-0">
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./index.html">Dashboard <i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./ticket.html">Tickets <i class="fa-solid fa-ticket-simple"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center accordion-button"
+                                href="#settings" data-bs-toggle="collapse">Settings</a>
+                            <!-- collapsible items -->
+                            <div class="collapse" id="settings">
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./ticket-types.html">Ticket</a>
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./agents.html">Agent</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./profile.html">Profile <i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="../index.html">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </header>
+        <!-- !header -->
+
+
+
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="settings agents tabs container h-100">
+
+                    <!-- tab title -->
+                <div class="main_title p-3 fw-bold d-flex justify-content-between align-items-center"><span>Settings | Agent</span> <i class="fa-solid fa-circle-plus fs-3 icon text-primary" data-bs-toggle="modal" data-bs-target="#modal_add_agent"></i></i></div>
+
+                <!-- content -->
+                <div class="main_content">
+
+                    <!-- agent list -->
+
+                    <div class="card mb-2 shadow border-0">
+                        <div class="card-body d-flex align-items-center p-3">
+                            <a href="#" class="text-decoration-none d-flex">
+                                <div class="avatar m-1 me-2">
+                                    <img src="../photos/admin/avatar.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark">Jericko Rubio <i class="fa-solid fa-certificate text-primary fa-sm"></i></h5>
+                                    <small>Joined on 10/10/22</small>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+
+                    <div class="card mb-2 shadow border-0">
+                        <div class="card-body d-flex align-items-center p-3">
+                            <a href="#" class="text-decoration-none d-flex">
+                                <div class="avatar m-1 me-2">
+                                    <img src="../photos/admin/avatar.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark">Claire De Joya <i class="fa-solid fa-circle-check text-primary fa-sm"></i></h5>
+                                    <small>Joined on 10/10/22</small>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-2 shadow border-0">
+                        <div class="card-body d-flex align-items-center p-3">
+                            <a href="#" class="text-decoration-none d-flex">
+                                <div class="avatar m-1 me-2">
+                                    <img src="../photos/admin/avatar.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark">Merry Jane <i class="fa-solid fa-circle-check text-primary fa-sm"></i></h5>
+                                    <small>Joined on 10/10/22</small>
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+
+
+                    <div class="card mb-2 shadow border-0">
+                        <div class="card-body d-flex align-items-center p-3">
+                            <a href="#" class="text-decoration-none d-flex">
+                                <div class="avatar m-1 me-2">
+                                    <img src="../photos/admin/avatar.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 text-dark">Jonny Bravo <i class="fa-solid fa-certificate text-primary fa-sm"></i></h5>
+                                    <small>Joined on 10/10/22</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+              
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

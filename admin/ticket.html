@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Ticket</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 px-sm-5 border-bottom">
+            <!-- app logo -->
+            <div class="logo d-flex justify-content-center align-items-center">
+            <a href="#" class="me-1">
+               <!-- logo -->
+                <img src="../photos/DICT-logo.png" alt="" class="img">
+            </a>
+            <!-- title -->
+            <span>| Help Desk</span>
+            </div>
+        
+            <!-- app nav -->
+            <nav class="app_navigation d-flex align-items-center">
+            
+                <!-- notification drowdown -->
+                <div class="dropdown">
+                    <!-- notification bell -->
+                    <div class="nofications me-3 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown">
+                        <!-- notification counter -->
+                        <span class="notif_counter d-flex justify-content-center align-items-center">100</span>
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </div>
+            
+                    <!-- list of notifications -->
+                    <div class="dropdown-menu notification_list border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Magni, ex.</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A third link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A fourth link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A disabled link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+            
+                        </ul>
+                    </div>
+            
+                </div>
+                <!-- user avatar -->
+                <div class="nav_controls d-flex flex-column align-items-center position-relative">
+                    <div class="avatar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <img src="../photos/admin/avatar.png" alt="Avatar" class="img">
+                    </div>
+                    <span class="position">Agent</span>
+            
+                    <!-- drowpdown menu -->
+                    <ul class="dropdown-menu shadow border-0">
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./index.html">Dashboard <i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./ticket.html">Tickets <i class="fa-solid fa-ticket-simple"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center accordion-button"
+                                href="#settings" data-bs-toggle="collapse">Settings</a>
+                            <!-- collapsible items -->
+                            <div class="collapse" id="settings">
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./ticket-types.html">Ticket</a>
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./agents.html">Agent</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./profile.html">Profile <i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="../index.html">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </header>
+        <!-- !header -->
+
+
+
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="ticket tabs container h-100">
+
+                    <!-- tab title -->
+                <h4 class="main_title p-3 fw-bold">Tickets</h4>
+
+                <!-- content -->
+                <div class="main_content">
+
+                    <!-- /header -->
+                <div class="search">
+                    <!-- search form -->
+                    <form action="#" method="post">
+                        <div class="field">
+                            <label for="search_ticket" class="form-label">Search ticket</label>
+                            <div class="input-group">
+                            <input type="text" name="search_ticket" id="search_ticket" class="form-control form-control-sm">
+                                <button class="btn btn-secondary btn-sm" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                    <!-- filter tickets -->
+                <div class="ticket_status d-flex justify-content-md-end justify-content-center align-items-center alert flex-wrap">
+                    <!--  ticket link-->
+                <a href="#" class="link_status text-decoration-none p-2 px-3 open text-primary m-1">Open</a>
+                <a href="#" class="link_status text-decoration-none p-2 px-3 pending text-danger m-1 active_link">Pending</a>
+                <a href="#" class="link_status text-decoration-none p-2 px-3 resolved text-secondary m-1">Resolved</a>
+                <a href="#" class="link_status text-decoration-none p-2 px-3 closed text-dark m-1">Closed</a>
+                </div>
+
+                <!-- content -->
+
+                <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th>#Ticket Number</th>
+                            <th>Customer Name</th>
+                            <th>Subject</th>
+                            <th>Created On</th>
+                            <th>Status</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i
+                                            class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i
+                                            class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+
+                         <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i
+                                            class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        
+
+                         <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html" class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>0063623</td>
+                            <td>John Doe</td>
+                            <td>Hardware</td>
+                            <td>10/10/22:10:12am</td>
+                            <td>Open</td>
+                            <td>
+                                <!-- action buttons -->
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <a href="#"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none me-1 text-danger"><i
+                                            class="fa-regular fa-trash-can"></i></a>
+                                    <a href="./ticket-messages.html"
+                                        class="table_action_link d-flex justify-content-center align-items-center text-decoration-none ms-1 text-secondary"><i class="fa-solid fa-message"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                </div>
+                
+                </div>
+
+              
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

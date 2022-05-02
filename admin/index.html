@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Dashboard</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 px-sm-5 border-bottom">
+            <!-- app logo -->
+            <div class="logo d-flex justify-content-center align-items-center">
+            <a href="#" class="me-1">
+               <!-- logo -->
+                <img src="../photos/DICT-logo.png" alt="" class="img">
+            </a>
+            <!-- title -->
+            <span>| Help Desk</span>
+            </div>
+        
+            <!-- app nav -->
+            <nav class="app_navigation d-flex align-items-center">
+
+                <!-- notification drowdown -->
+                <div class="dropdown">
+                <!-- notification bell -->
+                <div class="nofications me-3 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown">
+                    <!-- notification counter -->
+                    <span class="notif_counter d-flex justify-content-center align-items-center">100</span>
+                    <i class="fa-solid fa-bell fa-lg text-secondary"></i>
+                </div>
+
+                <!-- list of notifications -->
+                    <div class="dropdown-menu notification_list border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ex.</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A third link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A fourth link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A disabled link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- user avatar -->
+                    <div class="nav_controls d-flex flex-column align-items-center position-relative">
+                        <div class="avatar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <img src="../photos/admin/avatar.png" alt="Avatar" class="img">
+                        </div>
+                        <span class="position">Agent</span>
+
+                        <!-- drowpdown menu -->
+                        <ul class="dropdown-menu shadow border-0">
+                            <li>
+                                <a class="dropdown-item py-2 d-flex justify-content-between align-items-center" href="./index.html">Dashboard <i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex justify-content-between align-items-center" href="./ticket.html">Tickets <i class="fa-solid fa-ticket-simple"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex justify-content-between align-items-center accordion-button" href="#settings" data-bs-toggle="collapse">Settings</a>
+                                <!-- collapsible items -->
+                                <div class="collapse" id="settings">
+                                    <a class="dropdown-item py-2 d-flex justify-content-end align-items-center" href="./ticket-types.html">Ticket</a>
+                                    <a class="dropdown-item py-2 d-flex justify-content-end align-items-center" href="./agents.html">Agent</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex justify-content-between align-items-center" href="./profile.html">Profile <i class="fa-solid fa-user"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex justify-content-between align-items-center" href="../index.html">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+                            </li>
+                        </ul>
+                    </div>  
+            </nav>
+        
+        </header>
+        <!-- !header -->
+
+
+
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="dashboard tabs container h-100">
+
+                    <!-- tab title -->
+                <h4 class="main_title p-3 fw-bold">Dashboard</h4>
+
+                <!-- content -->
+                <div class="main_content">
+
+                <div class="row">
+                    <!-- visual chart -->
+                    <div class="col-md-8">
+                        <!-- chart -->
+                        <div class="chart">
+                            <!-- chart title -->
+                            <h4 class="chart_title text-center">Visual Overview <i class="fa-solid fa-chart-pie"></i></h4>
+
+                            <!-- pie chart -->
+                            <div class="pie_chart">
+                                <canvas id="pie"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- data -->
+                    <div class="col-md-4">
+                        <!-- information -->
+                        <div class="ticket_info d-flex flex-column justify-content-center h-100 p-3">
+                            <h4 class="text-center py-2">Ticket Status <i class="fa-solid fa-ticket-simple"></i></h4>
+                            <!-- total tickets -->
+                            <div class="card total mb-3">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <!-- title of ticket info -->
+                                    <span>Total</span>
+                                    <!-- number of tickets -->
+                                    <span class="summation badge bg-dark">100</span>
+                                </div>
+                            </div>
+
+                            <!-- open tickets -->
+                            <div class="card open mb-3">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <!-- title of ticket info -->
+                                    <span>Open</span>
+                                    <!-- number of tickets -->
+                                    <span class="summation badge bg-primary">10</span>
+                                </div>
+                            </div>
+
+                            <!-- Pending tickets -->
+                            <div class="card pending mb-3">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <!-- title of ticket info -->
+                                    <span>Pending</span>
+                                    <!-- number of tickets -->
+                                    <span class="summation badge bg-danger">10</span>
+                                </div>
+                            </div>
+
+                            <!-- Resolved tickets -->
+                            <div class="card closed mb-3">
+                                <div class="card-body d-flex justify-content-between align-items-center">
+                                    <!-- title of ticket info -->
+                                    <span>Closed</span>
+                                    <!-- number of tickets -->
+                                    <span class="summation badge bg-secondary">1053</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

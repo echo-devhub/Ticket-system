@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Settings</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="../css/admin/app.css">
+</head>
+
+<body>
+
+
+    <!-- modal for adding new ticket subject -->
+    <div class="modal fade" id="add_modal_ticket_subject">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">New Ticket Subject</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="field mb-3">
+                            <input type="text" name="ticket_subject" id="ticket_subject" class="form-control" placeholder="Subject">
+                        </div>
+
+                        <div class="field d-grid">
+                            <button type="submit" class="btn btn-primary d-block">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal for updating new ticket subject -->
+    <div class="modal fade" id="modify_modal_ticket_subject">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Update Ticket Subject</h6>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <div class="field mb-3">
+                            <input type="text" name="ticket_subject" id="ticket_subject" class="form-control"
+                                placeholder="Subject">
+                        </div>
+    
+                        <div class="field d-grid">
+                            <button type="submit" class="btn btn-success d-block">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="app_header d-flex justify-content-between align-items-center px-3 px-sm-5 border-bottom">
+            <!-- app logo -->
+            <div class="logo d-flex justify-content-center align-items-center">
+            <a href="#" class="me-1">
+               <!-- logo -->
+                <img src="../photos/DICT-logo.png" alt="" class="img">
+            </a>
+            <!-- title -->
+            <span>| Help Desk</span>
+            </div>
+        
+            <!-- app nav -->
+            <nav class="app_navigation d-flex align-items-center">
+            
+                <!-- notification drowdown -->
+                <div class="dropdown">
+                    <!-- notification bell -->
+                    <div class="nofications me-3 d-flex justify-content-center align-items-center" data-bs-toggle="dropdown">
+                        <!-- notification counter -->
+                        <span class="notif_counter d-flex justify-content-center align-items-center">100</span>
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </div>
+            
+                    <!-- list of notifications -->
+                    <div class="dropdown-menu notification_list border-0 shadow p-0">
+                        <ul class="list-group list-group-flush p-0">
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Magni, ex.</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A third link item</a>
+                            <a href="#" class="is_read list-group-item list-group-item-action py-3">A fourth link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A disabled link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action py-3">A second link item</a>
+            
+                        </ul>
+                    </div>
+            
+                </div>
+                <!-- user avatar -->
+                <div class="nav_controls d-flex flex-column align-items-center position-relative">
+                    <div class="avatar dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <img src="../photos/admin/avatar.png" alt="Avatar" class="img">
+                    </div>
+                    <span class="position">Agent</span>
+            
+                    <!-- drowpdown menu -->
+                    <ul class="dropdown-menu shadow border-0">
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./index.html">Dashboard <i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./ticket.html">Tickets <i class="fa-solid fa-ticket-simple"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center accordion-button"
+                                href="#settings" data-bs-toggle="collapse">Settings</a>
+                            <!-- collapsible items -->
+                            <div class="collapse" id="settings">
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./ticket-types.html">Ticket</a>
+                                <a class="dropdown-item py-2 d-flex justify-content-end align-items-center"
+                                    href="./agents.html">Agent</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="./profile.html">Profile <i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2 d-flex justify-content-between align-items-center"
+                                href="../index.html">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </header>
+        <!-- !header -->
+
+
+
+        <main class="app_main">
+                <!-- tab content -->
+            <section class="settings tabs ticket-types container h-100">
+
+                    <!-- tab title -->
+                <div class="main_title p-3 fw-bold d-flex justify-content-between align-items-center">
+                    <span>Settings | Ticket subject</span> 
+                    <i class="fa-solid fa-circle-plus fs-3 icon text-primary" data-bs-toggle="modal" data-bs-target="#add_modal_ticket_subject"></i>
+                </div>
+
+                <!-- content -->
+                <div class="main_content">
+
+                    <!-- table record -->
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                            <thead>
+                                <tr>
+                                    <th>#ID</th>
+                                    <th>Ticket Subject</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Software</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center align-items-center table_controls">
+                                            <a href="#" class="table_action_link text-decoration-none d-flex justify-content-center align-items-center me-1">
+                                                <i class="fa-regular fa-trash-can text-danger"></i>
+                                            </a>
+                                            <a href="#" class="text-decoration-none table_action_link d-flex justify-content-center align-items-center ms-1" data-bs-toggle="modal" data-bs-target="#modify_modal_ticket_subject">
+                                                <i class="fa-solid fa-pencil text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>Hardware</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center align-items-center table_controls">
+                                            <a href="#" class="table_action_link text-decoration-none d-flex justify-content-center align-items-center me-1">
+                                                <i class="fa-regular fa-trash-can text-danger"></i>
+                                            </a>
+                                            <a href="#" class="text-decoration-none table_action_link d-flex justify-content-center align-items-center ms-1" data-bs-toggle="modal" data-bs-target="#modify_modal_ticket_subject">
+                                                <i class="fa-solid fa-pencil text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td>Networking</td>
+                                    <td>
+                                        <div class="d-flex justify-content-center align-items-center table_controls">
+                                            <a href="#" class="table_action_link text-decoration-none d-flex justify-content-center align-items-center me-1">
+                                                <i class="fa-regular fa-trash-can text-danger"></i>
+                                            </a>
+                                            <a href="#" class="text-decoration-none table_action_link d-flex justify-content-center align-items-center ms-1" data-bs-toggle="modal" data-bs-target="#modify_modal_ticket_subject">
+                                                <i class="fa-solid fa-pencil text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+              
+            </section>
+
+        </main>
+    </div>
+    <!-- !wrapper -->
+
+<!-- bootstrap Js | bundle-->
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- custom js -->
+<!-- <script src="./js/nav.js"></script> -->
+
+</body>
+
+</html>

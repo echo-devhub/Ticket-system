@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICT | Create ticket</title>
+
+    <!-- fontawesone -->
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    
+
+    <!-- bootstrap css | minified-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- custome styles -->
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+
+    <!-- wrapper -->
+    <div class="wrapper">
+
+      <!-- header -->
+      <header class="app_header d-flex justify-content-between align-items-center px-5 border-bottom">
+        <!-- app logo -->
+        <a class="logo" href="./index.html">
+          <!-- image -->
+          <img src="./photos/DICT-Logo.png" alt="Logo" class="img">
+        </a>
+      
+        <!-- app nav -->
+        <nav class="app_navigation nav nav-pills flex-column flex-md-row align-items-md-center">
+          <!-- <a href="#" class="nav-link">ICT Equipment</a> -->
+          <a href="./index.html" class="nav-link link-secondary"><i class="fa-solid fa-house"></i></a>
+          <a href="./create-ticket.html" class="nav-link link-secondary active_link">New Ticket</a>
+        </nav>
+      
+        <!-- burger menu -->
+        <div class="menu_bar d-flex justify-content-center align-items-center d-md-none">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      
+      </header>
+      <!-- !header -->
+
+    <!-- app main content -->
+    <main class="app_main app_main py-3">
+
+      <section class="create-ticket tabs container position-relative">
+
+        <!-- visual effects -->
+        <div class="visual-effect"></div>
+
+      <div class="row">
+      <!-- intro message -->
+      <div class="col-md d-flex justify-content-center align-items-center my-3">
+        <div class="help_text">
+          <h1 class="display-6 fw-bolder text-secondary">Create New Ticket <i
+          class="fa-solid fa-ticket-simple"></i></h1>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ipsa earum suscipit ad blanditiis a tempora at Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint obcaecati, tempore impedit iste consectetur accusantium voluptatum accusamus repellendus aut ipsum!
+            culpa, libero dolore. </p>
+        </div>
+      </div>
+
+      <!-- form container -->
+      <div class="col-md my-3">
+        <!-- form -->
+        <div class="card form_container mx-auto border-0"> 
+
+          <div class="card-body">
+           <h3 class="text-center mb-5">New Ticket <i class="fa-solid fa-circle-check text-primary"></i></h3>
+        <form action="" method="post" class="form_ticket">
+
+          <!-- input name -->
+          <div class="field mb-3">
+            <label for="name" class="form-label">Your Name</label>
+              <input type="text" name="name" id="name" class="form-control form-control-sm">
+          </div>
+
+          <!-- input email -->
+          <div class="field mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" name="email" id="email" class="form-control form-control-sm">
+          </div>
+
+          <!-- input subject -->
+          <div class="field mb-3">
+            <label for="subject" class="form-label">Type of Issue</label>
+            <select name="subject" id="subject" class="form-select form-select-sm">
+              <option value="Other" selected>Other</option>
+              <option value="Hardware">Hardware</option>
+              <option value="Software">Software</option>
+            </select>
+          </div>
+
+          <!-- input Priority -->
+            <div class="field mb-3">
+              <label for="priority" class="form-label d-flex align-items-center">Priority <i class="fa-solid fa-arrow-trend-up ms-1"></i></label>
+              <select name="priority" id="priority" class="form-select form-select-sm">
+                <option value="Low" selected>Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Urgent">Urgent</option>
+              </select>
+            </div>
+
+            <!-- text area | description -->
+            <div class="field mb-3 textarea">
+              <label for="description" class="form-label">Describe your issue</label>
+              <textarea name="description" id="description" cols="30" rows="15" class="form-control"></textarea>
+            </div>
+
+            <div class="field text-end">
+              <button type="submit" class="btn btn-success">Send Now</button>
+            </div>
+        </form>
+          </div>
+        </div>
+
+      </div>
+
+      </div>
+      </section>
+
+    </main>
+    <!-- !app main content -->
+
+    </div>
+    <!-- !wrapper -->
+
+    <!-- bootstrap Js | bundle-->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./js/nav.js"></script>
+  </body>
+</html>

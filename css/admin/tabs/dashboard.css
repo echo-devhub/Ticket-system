@@ -1,0 +1,14 @@
+/* ...dashboard */
+
+/* add temporary bg to chart container */
+.tabs.dashboard .chart>.pie_chart {
+    background-color: var(--light-gray);
+    height: 400px;
+
+}
+
+/* set height of canvas to the same as its container */
+.chart>.pie_chart>.pie {
+    height: 400px;
+    max-height: 400px;
+}
